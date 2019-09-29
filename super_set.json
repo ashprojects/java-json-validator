@@ -1,0 +1,32 @@
+{
+  "$schema": {
+    "string-key" : {
+      "$property": {
+        "type" : "string",
+        "nullable": false,
+        "pattern" : "[a-zA-Z]+",
+        "minLength": 10,
+        "maxLength": 20,
+        "in": ["ABC","DEF"]
+      }
+    },
+    "number-key": {
+      "$property": {
+        "type": "number",
+        "nullable": true,
+        "min": 30,
+        "max": 50,
+        "in": [10, 20, 30]
+      }
+    },
+    "date-key": {
+      "$property": {
+        "type": "date_string",
+        "nullable": true,
+        "format": "dd/MM/yyyy",
+        "minYears": 20,
+        "maxYears": 45
+      }
+    }
+  }
+}

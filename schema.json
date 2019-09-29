@@ -1,0 +1,25 @@
+{
+  "$schema": {
+    "name" : {
+      "$property": {
+        "type" : "string",
+        "nullable": false
+      }
+    },
+    "age": {
+      "$property": {
+        "type": "number",
+        "nullable": false,
+        "in": [10, 20 , 40]
+      }
+    },
+    "dob": {
+      "$property": {
+        "type": "date_string",
+        "nullable": true,
+        "format": "dd/MM/yyyy",
+        "maxYears": 45
+      }
+    }
+  }
+}
